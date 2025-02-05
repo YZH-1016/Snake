@@ -16,6 +16,10 @@ press = pygame.key.get_pressed()
 food_x = random.randint(0,15)
 food_y = random.randint(0,15)
 
+# declare consumable position (randomly)
+consumable_x = random.randint(0,15)
+consumable_y = random.randint(0,15)
+
 # declare snake variables
 snake_length = 3
 
@@ -37,6 +41,10 @@ snake_head = pygame.transform.scale(pygame.image.load("snakepng/snakeright.png")
 win = pygame.transform.scale(pygame.image.load("snakepng/win.png"), (400,400))
 
 lose = pygame.transform.scale(pygame.image.load("snakepng/lose.png"), (400,400))
+
+fast_food = pygame.transform.scale(pygame.image.load("snakepng/fast.png"), (25,25))
+
+slow_food = pygame.transform.scale(pygame.image.load("snakepng/slow.png"), (25,25))\
 
 # while the game is not lost or won...
 while True:
