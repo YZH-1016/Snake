@@ -190,8 +190,7 @@ while started == True:
             game_lost = True
 
     # move the rest of the snake body along with the head
-    if snake_movement != 0:
-        snake_body.insert(0,(snake_x,snake_y))
+    snake_body.insert(0,(snake_x,snake_y))
 
     # move snake depending on pressed key
     if snake_movement == 1:
