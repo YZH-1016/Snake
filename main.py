@@ -137,7 +137,7 @@ while started == True:
 
             # if m is pressed, win the game (for showcase purposes)
             if event.key == pygame.K_m:
-                snake_length = 64
+                snake_length = 63
 
         # decrease the timer every second (if active)
         if event.type == pygame.USEREVENT and timer:
@@ -221,10 +221,10 @@ while started == True:
     pygame.display.update()
 
     # if the game is lost or won, display the corresponding screen and reset the game when the start button is pressed
-    while game_lost == True or snake_length == 64:
+    while game_lost == True or snake_length == 63:
         if game_lost == True:
             screen.blit(lose, (0,0))
-        if snake_length == 64:
+        if snake_length == 63:
             screen.blit(win, (0,0))
         reset_game()
     
