@@ -163,7 +163,7 @@ while started == True:
     if snake_x == consumable_x and snake_y == consumable_y:
         if consumable_num == 0:
             powerup = 0.75
-        if consumable_num == 1:
+        else:
             powerup = 1.5
         timer = True
         consumable_x, consumable_y = 16, 16
@@ -213,7 +213,7 @@ while started == True:
     if consumable_num == 0:
         screen.blit(fast_food, (49.9*consumable_x, 49.9*consumable_y))
         
-    if consumable_num == 1:
+    else:
         screen.blit(slow_food, (49.9*consumable_x, 49.9*consumable_y))
         
     
