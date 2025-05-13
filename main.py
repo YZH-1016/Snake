@@ -224,7 +224,7 @@ while started == True:
     while game_lost == True or snake_length == 63:
         if game_lost == True:
             screen.blit(lose, (0,0))
-        if snake_length == 63:
+        else:
             screen.blit(win, (0,0))
         reset_game()
     
